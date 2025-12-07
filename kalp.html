@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I Love You OBLENDO Kalp Animasyonu</title>
+
+<style>
+    body {
+        margin: 0;
+        background: radial-gradient(circle at center, #10203a, #060a12);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-family: "Segoe UI", sans-serif;
+    }
+
+    svg {
+        width: 380px;
+        height: 380px;
+        overflow: visible;
+    }
+
+    text {
+        font-size: 22px;
+        font-weight: bold;
+        fill: #ffadc9;
+        letter-spacing: 2px;
+        text-shadow: 0 0 10px rgba(255, 200, 220, 0.8);
+    }
+
+    .rotate {
+        animation: spin 12s linear infinite;
+        transform-origin: 50% 50%;
+    }
+
+    @keyframes spin {
+        from { transform: rotate(0deg); }
+        to   { transform: rotate(360deg); }
+    }
+
+    .footer {
+        margin-top: 20px;
+        font-size: 28px;
+        font-weight: 900;
+        letter-spacing: 10px;
+        color: #ffbdd4;
+        text-transform: lowercase;
+    }
+</style>
+</head>
+
+<body>
+
+<svg viewBox="0 0 300 300">
+    <defs>
+        <path id="heartPath"
+              d="
+              M150 270
+              C10 150, 40 20, 150 80
+              C260 20, 290 150, 150 270
+              Z" />
+    </defs>
+
+    <g class="rotate">
+        <text>
+            <textPath href="#heartPath" startOffset="0%">
+                I love you OBLENDO • I love you OBLENDO • I love you OBLENDO •
+            </textPath>
+        </text>
+    </g>
+</svg>
+
+<div class="footer">zmr</div>
+
+</body>
+</html>
